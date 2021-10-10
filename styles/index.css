@@ -1,0 +1,1335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+:root{
+    --main-color: #7BA839;
+}
+/* var(--main-color); */
+
+::-webkit-scrollbar {  /*me elimina el formato del scroll*/
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+#body{
+    /* background-image: linear-gradient(0, #ffffff 0, #fcfffd 12.5%, #f5f0f5 25%, #ebe1ed 37.5%, #dfd1e7 50%, #d0c2e2 62.5%, #bfb5de 75%, #adaadb 87.5%, #99a1d8 100%);    height: 1000px; */
+    height: 1100px;
+    /* background-color: moccasin; */
+    background-image: radial-gradient(circle at 50% 120.71%, #fdffff 0, #fdffff 6.25%, #fdffff 12.5%, #feffff 18.75%, #fdffff 25%, #fcffff 31.25%, #faffff 37.5%, #f7f7f7 43.75%, #f1ebf0 50%, #eadfeb 56.25%, #e1d5e7 62.5%, #d7cde4 68.75%, #cdc5e3 75%, #c1c0e2 81.25%, #b5bbe1 87.5%, #a8b8e0 93.75%, #9cb6df 100%);
+    /* background-image: radial-gradient(circle at 50% 120.71%, #ffffff 0, #ffffff 16.67%, #ffffff 33.33%, #f1ebf0 50%, #dcd0dc 66.67%, #cabccf 83.33%, #bcafc7 100%); */
+}
+    .header{
+    display: flex;
+    justify-content: center;
+    padding-top: 18px; 
+}
+#nav{
+    width: 95%;
+    height: 120px;
+    background-color: white;
+    /* border: solid 1px black; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+}
+
+#first-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.maps-top{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-weight: bold;
+    color: white;
+}
+.maps-tops{
+    position: absolute;
+    left: 25px;
+}
+
+.we{
+    top: -7px;
+    left: 5px;
+}
+#list-redes{
+    display: flex;
+    justify-content:flex-end;
+    list-style: none;
+    margin-top: 20px;
+}
+.top-nav{
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 35px;
+}
+
+.face{
+    margin-right: 22px;
+}
+#navBar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.li-navBar{
+    padding-left: 30px;
+    padding-right: 30px;  
+    }
+#div-logo{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    width: 115px;
+    height: auto;
+    margin-left: 20px;
+    opacity: 60%;   
+}
+#logo-dos{
+    border-radius: 10px;
+    width: 170px;
+    opacity: 90%;
+}
+
+/* HERE START THE MAIN */
+
+#main-main{
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    width: 95%;
+    height: 720px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+        margin-top: 80px;
+    box-shadow: rgba(0,0,0,0.3) 0px 3px 3px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-top: 15px;
+    overflow:scroll;
+    border-top: solid rgba(130, 99, 155, 0.555) 1px;
+    
+}
+
+.normalPrice{
+    color: gray;
+    text-decoration: line-through ;
+    font-size: 16px;
+    font-weight: 100;
+
+}
+
+.lowPrice{
+    font-size: 23px;
+}
+
+.accurate{
+    color: green;
+    position: absolute;
+    left: 100px;
+    top: 32px;
+    font-size: 17px;
+    width: 90px;
+    
+}
+
+.description-price{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 14px;
+    bottom: 10px;
+    position: absolute;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 2px;
+    padding-top: 5px;
+    
+    
+}
+#footer-container{
+    display: flex;
+    justify-content: center;
+}
+#footer-inside{
+    width: 95%;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FBE2FB;
+    backdrop-filter: blur(50px);
+}
+
+
+.list-footer{
+    font-weight: bold;
+    list-style: none;
+    padding-right: 75px;
+}
+
+.icons-footer{
+    font-size: 30px;
+    color: rgb(238, 96, 96);
+
+}
+/* Contenedor de todo lo del producto */
+.picture{
+    width: 300px;
+    height: 330px;
+    position: relative;
+    transition: 0.8s;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    flex: 23%;
+    /* box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px ; */
+    box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+    border: rgba(255, 255, 255, 0.637) 1px solid;
+    /* padding: 55px; */
+
+
+} 
+
+.picture:hover{
+    transition: 0.8s;  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: #8DCCC5 25px solid;
+    /* border-left: rgba(72, 7, 97, 0.438) 25px solid; */
+    /* border-left: rgba(255, 99, 71, 0.767) 25px solid; */
+    
+}
+
+
+/* .ocult{
+    position: absolute;
+    width: 370px;
+    height: 620px;
+    transition: 1s;
+    display: none;
+
+}
+.ocult:hover{
+    background-color: blue;
+    width: 370px;
+    height: 320px;
+    transition: 1s;
+    
+
+} */
+
+
+
+
+
+
+.large-picture{
+    height: 690px;
+}
+.large-picture-dos{
+    height: 690px;
+}
+
+/* Contenedor de la img del producto */
+.figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 25px; */
+   
+    
+}
+/* Imagen del Producto */
+.img{
+    width: 280px;
+    height: 250px;
+    border-radius: 15px;
+    padding-top: 20px;
+    /* border: solid 1px black; */
+}
+
+.large{
+    height: 580px;
+    width: 258px;
+}
+.large-dos{
+    height: 580px;
+    width: 200px;
+}
+.large-tres{
+    height: 400px;
+    width: 276px;
+}
+.large-cuatro{
+    height: 525px;
+    width: 276px;
+}
+.large-cinco{
+    height: 433px;
+    width: 276px;
+}
+.large-seis{
+    width: 305px;
+    height: 590px;
+}
+.large-siete{
+    width: 320px;
+    height: 320px;  
+}
+.large-ocho{
+    width: 243px;
+    height: 500px;
+}
+.large-nueve{
+    width: 325px;
+    height: 500px;
+}
+.large-x{
+    width: 252px;
+    height: 500px;
+}
+.padding-top{
+    position: absolute;
+    top: 100px;
+}
+
+
+
+/* Icono carrito de compras */
+.carro{
+    font-size: 21px;
+    position: absolute;
+    right:30px;
+    bottom: 10px;
+}
+
+.buy{
+    color: rgb(0, 0, 0);
+}
+.buy:hover{
+    color: #8DCCC5;
+}
+
+.car{
+    position: relative;
+    right: -410px;
+    top: 4px;
+}
+.tittle{
+    margin-left: 0px;
+}
+
+/* Nombre del Producto */
+.description{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 14px;
+    bottom: 60px;
+    position: absolute;
+    border-bottom: rgba(106, 97, 131, 0.5) solid 1px;
+    padding-bottom: 5px;
+    width: 100%;
+
+
+}
+
+
+
+
+
+/* PRUEBA DE COLORES */
+
+
+.colores{
+    
+    height: 39px;
+    overflow: hidden;
+    transition: 1s;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: space-between ;
+    margin-left: 10px;
+    font-size: 19px;
+
+    
+}
+
+.tittle{
+    font-size: 21px;
+    display: flex;
+}
+
+
+
+.colores:hover{
+    overflow: visible;
+    height: 39px;
+    position: relative;
+    transition: 0.5s;
+   
+    
+}
+
+.list-colores{
+  list-style: none;
+  width: 100%;
+ 
+}
+
+
+
+.list-two-colores{
+    border-bottom: #8DCCC5 1px solid;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+.list-two-colores:hover{
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+}
+
+
+
+
+/* Barra superior inferior */
+
+
+
+.barSup{
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgba(0,0,0,0.1);
+    /* background-color: rgba(148, 30, 128, 0.1); */
+    background-color: #FBE2FB;
+    /* border-radius: 10px; */
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.barSupDos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.barSupTres{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+
+}
+
+.listTwo{
+    padding: 0px 100px 0px 100px ;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.listTwo:hover{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    /* border-radius: 1055px; */
+    border-bottom: solid 1px rgb(241, 212, 241);
+    
+}
+
+
+
+
+
+/* Medias Querys */
+
+@media (max-width: 515px){
+    #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        /* border: solid 1px black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+        margin-top: -20px;
+    }
+
+    .normalPrice{
+        color: gray;
+        text-decoration: line-through ;
+        font-size: 16px;
+        font-weight: 100;
+        position: absolute;
+    
+    }
+    
+    .lowPrice{
+        font-size: 23px;
+        position: relative;
+        left: 60px;
+    }
+    
+    .accurate{
+        color: green;
+        position: absolute;
+        left: 160px;
+        top: 10px;
+        font-size: 17px;
+        width: 90px;
+        
+    }
+    
+    .description-price{
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 14px;
+        bottom: 10px;
+        position: absolute;
+        /* border: 1px solid red; */
+        position: absolute;
+        bottom: 2px;
+        padding-top: 5px;
+        
+        
+    }
+
+    .description{
+        
+        bottom: 45px;
+    }
+    
+    
+   
+
+    .img{
+        width: 280px;
+        height: 250px;
+        border-radius: 15px;
+        padding-top: 0px;
+       
+    }
+
+    .padding-top{
+       position: relative;
+       top: 0px;
+        
+        
+    }
+
+.large-tres{
+    height: 320px;
+    width: 200px;
+
+}
+   .large-cuatro{
+       height: 350px;
+         width: 225px;
+
+   }
+
+   .larr{
+       height: 340px;
+       width: 195px;
+   }
+
+   .larrdos{
+  position: relative;
+  top: -2px;
+   }
+   
+   .larrtres{
+       margin-top: 50px;
+   }
+
+   .larrcuatro{
+
+    width: 200px;
+   }
+    .large-seis{
+        width: 170px;
+        height: 350px;
+       
+    }
+
+    .large-cinco{
+        width: 210px;
+        height: 350px;
+
+    }
+
+    .large-ocho{
+        height: 340px;
+        width: 190px;
+    }
+
+    .large-nueve{
+        width: 220px;
+        height: 315px;
+    }
+
+    .picture{
+        width: 300px;
+        height: 330px;
+        position: relative;
+        transition: 0.8s;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-right: 25px;
+        margin-bottom: 15px;
+        flex: 23%;
+        box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+        border: rgba(255, 255, 255, 0.637) 1px solid;
+        
+    } 
+
+    .large-picture{
+        height: 430px;
+    }
+    .large-picture-dos{
+        height: 430px;
+    }
+
+    .li-navBar{
+        padding-left: 0px;
+        padding-right: 0px;  
+        display: none;
+        }
+
+        .listTwo{
+            padding: 0px 20px 0px 20px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 6px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #logo{
+            width: 97px;
+            height: auto;
+            margin-left: 20px;
+            opacity: 90%;   
+        }
+        #logo-dos{
+            border-radius: 100px;
+            width: 160px;
+            opacity: 90%;
+        }
+
+        .top-nav{
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: 27px;
+            position: relative;
+            top: -10px;
+            right: -16px;
+            
+        }
+
+        .maps-top{
+            position: absolute;
+            left: 0px;
+            top:14px;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+        .maps-tops{
+            position: absolute;
+            left: 0px;
+            font-size: 28px;
+        }
+        
+        .we{
+            top: -7px;
+            left: 5px;
+        }
+        
+        
+
+       
+        
+        .picture:hover{
+            transition: 0.7s;  
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-left: #8DCCC5 15px solid;
+            /* border-left: rgba(72, 7, 97, 0.438) 25px solid; */
+            /* border-left: rgba(255, 99, 71, 0.767) 25px solid; */
+            
+        }
+
+        #footer-inside{
+            width: 95%;
+            height: 70px;
+            border-radius: 10px;
+            margin-top: 70px;
+            box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #FBE2FB;
+            backdrop-filter: blur(50px);
+        }
+        
+    
+        
+        
+        
+        
+        
+        
+       
+}
+
+@media (min-width: 515px) and (max-width: 700px){
+    #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        /* border: solid 1px black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+    }
+
+    .li-navBar{
+        padding-left: 0px;
+        padding-right: 0px;  
+        display: none;
+        }
+
+        .listTwo{
+            padding: 0px 20px 0px 20px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 6px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #logo{
+            width: 98px;
+            height: auto;
+            margin-left: 20px;
+            opacity: 90%;   
+        }
+        #logo-dos{
+            border-radius: 100px;
+            width: 160px;
+            opacity: 90%;
+        }
+
+        .top-nav{
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: 27px;
+        }
+
+        .maps-top{
+            position: absolute;
+            left: 0px;
+            top:25px;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+        .maps-tops{
+            position: absolute;
+            left: 0px;
+        }
+        
+        .we{
+            top: -7px;
+            left: 5px;
+        }
+        .large-nueve{
+            width: 275px;
+            height: 450px;
+        }
+        .padding-top{
+            position: relative;
+            top: 100px;
+        }
+
+        .picture{
+            width: 300px;
+            height: 330px;
+            position: relative;
+            transition: 0.8s;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            flex: 23%;
+            /* box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px ; */
+            box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+            border: rgba(255, 255, 255, 0.637) 1px solid;
+            /* padding: 55px; */
+        
+        
+        } 
+        
+        .picture:hover{
+            transition: 0.7s;  
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-left: #8DCCC5 15px solid;
+            /* border-left: rgba(72, 7, 97, 0.438) 25px solid; */
+            /* border-left: rgba(255, 99, 71, 0.767) 25px solid; */
+            
+        }
+        
+    
+        
+        
+        
+        
+        
+        
+        .large-picture{
+            height: 690px;
+        }
+        .large-picture-dos{
+            height: 690px;
+        }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        /* border: solid 1px black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+    }
+
+    .li-navBar{
+        padding-left: 10px;
+        padding-right: 10px;  
+        display: flex;
+        }
+
+        .listTwo{
+            padding: 0px 20px 0px 20px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 3px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        #logo{
+            width: 98px;
+            height: auto;
+            margin-left: 20px;
+            opacity: 90%;   
+        }
+        #logo-dos{
+            border-radius: 100px;
+            width: 160px;
+            opacity: 90%;
+        }
+
+        .top-nav{
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: 27px;
+        }
+
+        .maps-top{
+            position: absolute;
+            left: 0px;
+            top:25px;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+        .maps-tops{
+            position: absolute;
+            left: 0px;
+        }
+        
+        .we{
+            top: -7px;
+            left: 5px;
+        }
+        .large-nueve{
+            width: 275px;
+            height: 450px;
+        }
+        .padding-top{
+            position: relative;
+            top: 100px;
+        }
+
+        .picture{
+            width: 300px;
+            height: 330px;
+            position: relative;
+            transition: 0.8s;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            flex: 23%;
+            /* box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px ; */
+            box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+            border: rgba(255, 255, 255, 0.637) 1px solid;
+            /* padding: 55px; */
+        
+        
+        } 
+        
+        .picture:hover{
+            transition: 0.7s;  
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-left: #8DCCC5 15px solid;
+            /* border-left: rgba(72, 7, 97, 0.438) 25px solid; */
+            /* border-left: rgba(255, 99, 71, 0.767) 25px solid; */
+            
+        }
+        
+    
+        
+        
+        
+        
+        
+        
+        .large-picture{
+            height: 690px;
+        }
+        .large-picture-dos{
+            height: 690px;
+        }
+}
+
+@media (min-width: 900px) and (max-width: 1020px){
+    #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        /* border: solid 1px black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+    }
+
+    .li-navBar{
+        padding-left: 15px;
+        padding-right: 15px;  
+        display: flex;
+        }
+
+        .listTwo{
+            padding: 0px 70px 0px 70px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 6px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        #logo{
+            width: 98px;
+            height: auto;
+            margin-left: 20px;
+            opacity: 90%;   
+        }
+        #logo-dos{
+            border-radius: 100px;
+            width: 160px;
+            opacity: 90%;
+        }
+
+        .top-nav{
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: 27px;
+        }
+
+        .maps-top{
+            position: absolute;
+            left: 0px;
+            top:25px;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+        .maps-tops{
+            position: absolute;
+            left: 0px;
+        }
+        
+        .we{
+            top: -7px;
+            left: 5px;
+        }
+        .large-nueve{
+            width: 275px;
+            height: 450px;
+        }
+        .padding-top{
+            position: relative;
+            top: 100px;
+        }
+
+        .picture{
+            width: 300px;
+            height: 330px;
+            position: relative;
+            transition: 0.8s;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            flex: 23%;
+            /* box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px ; */
+            box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+            border: rgba(255, 255, 255, 0.637) 1px solid;
+            /* padding: 55px; */
+        
+        
+        } 
+        
+        .picture:hover{
+            transition: 0.7s;  
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-left: #8DCCC5 15px solid;
+            /* border-left: rgba(72, 7, 97, 0.438) 25px solid; */
+            /* border-left: rgba(255, 99, 71, 0.767) 25px solid; */
+            
+        }
+        
+    
+        
+        
+        
+        
+        
+        
+        .large-picture{
+            height: 690px;
+        }
+        .large-picture-dos{
+            height: 690px;
+        }
+}
+
+@media (min-width: 1020px) and (max-width: 1500px){
+    /* #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+        margin-top: -20px;
+    }
+
+    .description{
+        
+        bottom: 45px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .description-price{
+        font-size: 15px;
+    }
+    
+    
+   
+
+    .img{
+        width: 280px;
+        height: 250px;
+        border-radius: 15px;
+        padding-top: 0px;
+       
+    }
+
+    .padding-top{
+       position: relative;
+       top: 0px;
+        
+        
+    }
+
+.large-tres{
+    height: 320px;
+    width: 200px;
+
+}
+   .large-cuatro{
+       height: 350px;
+         width: 225px;
+
+   }
+
+   .larr{
+       height: 340px;
+       width: 195px;
+   }
+
+   .larrdos{
+  position: relative;
+  top: -2px;
+   }
+   
+   .larrtres{
+       margin-top: 50px;
+   }
+
+   .larrcuatro{
+
+    width: 200px;
+   }
+    .large-seis{
+        width: 170px;
+        height: 350px;
+       
+    }
+
+    .large-cinco{
+        width: 210px;
+        height: 350px;
+
+    }
+
+    .large-ocho{
+        height: 340px;
+        width: 190px;
+    }
+
+    .large-nueve{
+        width: 220px;
+        height: 315px;
+    }
+
+    .picture{
+        width: 250px;
+        height: 330px;
+        position: relative;
+        transition: 0.8s;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        flex: 1%;
+        box-shadow: rgba(0,0,0,0.2) 5px 5px 5px 0px ;
+        border: rgba(255, 255, 255, 0.637) 1px solid;
+        
+    } 
+
+    .large-picture{
+        height: 430px;
+        width: 250px;
+    }
+    .large-picture-dos{
+        height: 430px;
+        width: 215px;
+    }
+
+    .li-navBar{
+        font-size: 19px;
+        }
+
+        .listTwo{
+            padding: 0px 100px 0px 100px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 16px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #logo{
+            width: 97px;
+            height: auto;
+            margin-left: 20px;
+            opacity: 90%;   
+        }
+        #logo-dos{
+            border-radius: 100px;
+            width: 160px;
+            opacity: 90%;
+        }
+
+        .top-nav{
+            padding-right: 16px;
+            padding-left: 16px;
+            font-size: 27px;
+            position: relative;
+            top: -10px;
+            right: -16px;
+            
+        }
+
+        .maps-top{
+            position: absolute;
+            left: 0px;
+            top:14px;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+        }
+        .maps-tops{
+            position: absolute;
+            left: 0px;
+            font-size: 28px;
+        }
+        
+        .we{
+            top: -7px;
+            left: 5px;
+        }
+        
+        
+
+       
+        
+        .picture:hover{
+            transition: 0.7s;  
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-left: #8DCCC5 15px solid;
+            
+            
+        }
+
+        #footer-inside{
+            width: 95%;
+            height: 70px;
+            border-radius: 10px;
+            margin-top: 70px;
+            box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #FBE2FB;
+            backdrop-filter: blur(50px);
+        } */
+        
+        body{
+            zoom: 67%;
+        }
+
+        .listTwo{
+            padding: 0px 100px 0px 100px ;
+            height: 50px;
+            text-align: center;
+            padding-top: 13px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .large-nueve{
+            width: 315px;
+            height: 480px;
+        }
+
+        .large-siete{
+            width: 310px;
+            height: 310px;  
+        }
+
+        .description{
+           
+            bottom: 45px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .description-price{
+            font-size: 20px;
+        }
+
+        .li-navBar{
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 25px;  
+            }
+
+        #nav{
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-weight: bold;
+        box-shadow: rgba(0,0,0,0.5) 0px 3px 3px 0px;  
+        margin-top: 1px;
+    }
+
+    #logo{
+        width: 97px;
+        height: auto;
+        margin-left: 20px;
+        opacity: 90%;   
+    }
+
+       
+}
+
+
